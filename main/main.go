@@ -5,6 +5,9 @@ import (
 	"net/http"
 
 	"github.com/gophercises/urlshort"
+	// TODO:自作パッケージを使用したいが修正が読み込まれず(使用していないftmのimport)
+	// go getでエラーになり使用できない
+	// "github.com/yuri-swift/urlshort"
 )
 
 func main() {
@@ -17,7 +20,7 @@ func main() {
 		"/yaml-godoc":     "https://godoc.org/gopkg.in/yaml.v2",
 	}
 	mapHandler := urlshort.MapHandler(pathsToUrls, mux)
-	
+
 	// Build the YAMLHandler using the mapHandler as the fallback
 	yaml := `
 - path: /urlshort
