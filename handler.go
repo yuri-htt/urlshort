@@ -58,7 +58,6 @@ func YAMLHandler(yamlBytes []byte, fallback http.Handler) (http.HandlerFunc, err
 }
 
 func buildMap(pathUrls []pathUrl) map[string]string {
-	fmt.Println("buildMap")
 	pathsToUrls := make(map[string]string)
 	for _, pu := range pathUrls {
 		pathsToUrls[pu.Path] = pu.URL
