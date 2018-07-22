@@ -4,10 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/gophercises/urlshort"
-	// TODO:自作パッケージを使用したいが修正が読み込まれず(使用していないftmのimport)
-	// go getでエラーになり使用できない
-	// "github.com/yuri-swift/urlshort"
+	"github.com/yuri-swift/urlshort"
 )
 
 func main() {
